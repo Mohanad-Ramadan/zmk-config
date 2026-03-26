@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENCODER_SCROLL";
             #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+            bindings = <&mmv>, <&mmv>;
         };
     };
 
@@ -51,7 +51,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&encoder_scroll SCRL_UP SCRL_DOWN>;
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         raise_layer {
