@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
-    G, H, J, K, L, ;, ENTER, '`', Z, X, C, V, B, VOICE COMMAND, SLEEP, N, M, ',', ., /, '''', LEFT ALT, LEFT COMMAND, '$$mdi:apple-keyboard-control$$', RAI, LEFT
-      SHIFT, RIGHT SHIFT, LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
+    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, VOICE COMMAND, SLEEP, N, M, ',', ., /, RIGHT SHIFT, LEFT ALT, LEFT COMMAND, '$$mdi:apple-keyboard-control$$',
+    RAI, LEFT SHIFT, RIGHT SHIFT, LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   RAI:
   - BT CLR
   - BT 1
@@ -27,7 +27,7 @@ layers:
   - '&mkp RCLK'
   - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-control$$
   - LEFT ALT
@@ -39,7 +39,7 @@ layers:
   - UP ARROW
   - →
   - BACKSPACE
-  - DELETE
+  - ''''
   - {t: ▽, type: trans}
   - UNDO
   - CUT
@@ -101,7 +101,7 @@ layers:
   - (
   - )
   - '|'
-  - {t: ▽, type: trans}
+  - '`'
   - '='
   - '-'
   - KP PLUS
