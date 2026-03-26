@@ -2,68 +2,7 @@ layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
     G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, VOICE COMMAND, SLEEP, N, M, ',', ., /, ENTER, '$$mdi:apple-keyboard-control$$', LEFT ALT,
-    LEFT COMMAND, LOW, '$$mdi:apple-keyboard-control$$', ENTER, ␣, RAI, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
-  LOW:
-  - '`'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - RAI
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - F12
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - AMPS
-  - KP MULTIPLY
-  - (
-  - )
-  - '|'
-  - {t: ▽, type: trans}
-  - '='
-  - '-'
-  - KP PLUS
-  - '{'
-  - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - ;
-  - ':'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+    LEFT COMMAND, RAI, '$$mdi:apple-keyboard-control$$', ENTER, LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   RAI:
   - BT CLR
   - BT 1
@@ -99,19 +38,15 @@ layers:
   - LEFT ARROW
   - ↓
   - →
-  - ⌦
-  - $$mdi:backspace-outline$$
+  - BACKSPACE
+  - DELETE
   - {t: ▽, type: trans}
   - UNDO
   - CUT
   - COPY
   - PASTE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UNDO
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,5 +58,70 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LOW:
+  - '`'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - LOW
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - F12
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - AMPS
+  - KP MULTIPLY
+  - (
+  - )
+  - '|'
+  - {t: ▽, type: trans}
+  - '='
+  - '-'
+  - KP PLUS
+  - '{'
+  - '}'
+  - {t: ▽, type: trans}
+  - MUTE
+  - '['
+  - ']'
+  - ;
+  - ':'
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
