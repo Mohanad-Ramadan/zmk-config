@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '&key_repeat', ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S,
-    D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, VOICE COMMAND, SLEEP, N, M, ',', ., /, ENTER, '$$mdi:apple-keyboard-control$$', LEFT
-      GUI, LEFT ALT, LOW, ␣, RAI, RIGHT SHIFT, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
+  BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
+    G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, VOICE COMMAND, SLEEP, N, M, ',', ., /, ENTER, '$$mdi:apple-keyboard-control$$', LEFT ALT,
+    LEFT COMMAND, LOW, '$$mdi:apple-keyboard-control$$', ENTER, ␣, RAI, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   LOW:
   - '`'
   - F1
@@ -82,22 +82,22 @@ layers:
   - Print Scrn
   - CMENU
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - Page Up
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UP ARROW
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
+  - LEFT ALT
+  - LEFT COMMAND
+  - LEFT SHIFT
   - CLCK
-  - ←
+  - {t: ▽, type: trans}
+  - LEFT ARROW
   - ↓
-  - ↑
   - →
   - ⌦
   - $$mdi:backspace-outline$$
@@ -120,8 +120,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
