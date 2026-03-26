@@ -24,7 +24,7 @@ layers:
   - PAGE DOWN
   - Page Up
   - {t: ▽, type: trans}
-  - UP ARROW
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
@@ -34,9 +34,9 @@ layers:
   - LEFT COMMAND
   - LEFT SHIFT
   - CLCK
-  - {t: ▽, type: trans}
   - LEFT ARROW
-  - ↓
+  - DOWN ARROW
+  - UP ARROW
   - →
   - BACKSPACE
   - DELETE
