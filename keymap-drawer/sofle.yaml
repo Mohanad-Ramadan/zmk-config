@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
-    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, VOICE COMMAND, SLEEP, N, M, ',', ., /, RIGHT SHIFT, LEFT ALT, LEFT COMMAND, '$$mdi:apple-keyboard-control$$',
-    RAI, LEFT SHIFT, RIGHT SHIFT, LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
+    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, VOICE COMMAND, SLEEP, N, M, ',', ., /, RIGHT SHIFT, LEFT SHIFT, LEFT ALT, LEFT COMMAND, LEFT CONTROL, RAI,
+    RIGHT SHIFT, LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   RAI:
   - BT CLR
   - BT 1
@@ -57,8 +57,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -96,8 +96,8 @@ layers:
   - $
   - '%'
   - ^
-  - AMPS
   - '-'
+  - AMPERSAND
   - (
   - )
   - '|'
@@ -125,3 +125,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [28, 31]
+  k: Gui+␣
