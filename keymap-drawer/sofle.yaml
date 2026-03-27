@@ -46,7 +46,7 @@ layers:
   - COPY
   - PASTE
   - {t: ▽, type: trans}
-  - REDO
+  - PLAY PAUSE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
