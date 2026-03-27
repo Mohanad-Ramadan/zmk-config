@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
-    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, VOICE COMMAND, SLEEP, N, M, ',', ., /, RIGHT SHIFT, LEFT SHIFT, LEFT ALT, LEFT COMMAND, LEFT CONTROL, RAI,
+    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, PLAY PAUSE, Gui+Sft+3, N, M, ',', ., /, RIGHT SHIFT, LEFT SHIFT, LEFT ALT, LEFT COMMAND, RAI, '$$mdi:apple-keyboard-control$$',
     RIGHT SHIFT, LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   RAI:
   - BT CLR
@@ -46,9 +46,8 @@ layers:
   - COPY
   - PASTE
   - {t: ▽, type: trans}
-  - PLAY PAUSE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOICE COMMAND
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -59,6 +58,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -101,7 +101,7 @@ layers:
   - (
   - )
   - '|'
-  - '`'
+  - AC COPY
   - '='
   - '-'
   - KP PLUS
@@ -126,5 +126,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [28, 31]
-  k: Gui+␣
+- p: [43, 42]
+  k: Gui+Sft+4
