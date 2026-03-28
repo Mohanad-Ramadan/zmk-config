@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
-    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, PLAY PAUSE, Gui+Sft+3, N, M, ',', ., /, RIGHT SHIFT, LEFT SHIFT, LEFT ALT, LEFT COMMAND, RAI, LEFT SHIFT,
-    '$$mdi:apple-keyboard-control$$', LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
+    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, PLAY PAUSE, Gui+Sft+3, N, M, ',', ., /, RIGHT SHIFT, num_pad, LEFT ALT, LEFT COMMAND, RAI, '$$mdi:apple-keyboard-control$$',
+    LEFT SHIFT, ␣, LOW, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   RAI:
   - BT CLR
   - BT 1
@@ -60,7 +60,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RSHIFT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -89,28 +89,28 @@ layers:
   - (
   - )
   - DELETE
-  - {t: ▽, type: trans}
-  - '-'
+  - '|'
+  - /
   - '@'
   - $
-  - (
-  - '['
-  - ']'
-  - )
   - '-'
+  - Gui+Alt+Ctl+,
+  - Gui+Alt+Ctl+.
+  - '?'
+  - _
   - +
   - '='
   - ''''
-  - '|'
-  - \
-  - /
-  - Alt+Gui+Ctl+<
-  - Alt+Ctl+Gui+>
-  - '{'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - (
+  - '['
   - MUTE
   - {t: ▽, type: trans}
-  - '}'
-  - '?'
+  - ']'
+  - )
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -121,7 +121,68 @@ layers:
   - Gui+`
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  num_pad:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
