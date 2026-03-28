@@ -33,8 +33,8 @@ layers:
   - LEFT ALT
   - LEFT COMMAND
   - LEFT SHIFT
-  - CLCK
-  - {t: ▽, type: trans}
+  - DELETE
+  - BACKSPACE
   - LEFT ARROW
   - DOWN ARROW
   - →
@@ -97,7 +97,7 @@ layers:
   - Gui+Alt+Ctl+,
   - Gui+Alt+Ctl+.
   - '?'
-  - _
+  - '-'
   - +
   - '='
   - ''''
