@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
-    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, PLAY PAUSE, Gui+Sft+3, N, M, ',', ., /, RIGHT SHIFT, LEFT SHIFT, LEFT ALT, LEFT COMMAND, RAI, '$$mdi:apple-keyboard-control$$',
-    RIGHT SHIFT, LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
+    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, PLAY PAUSE, Gui+Sft+3, N, M, ',', ., /, RIGHT SHIFT, LEFT SHIFT, LEFT ALT, LEFT COMMAND, RAI, LEFT SHIFT,
+    '$$mdi:apple-keyboard-control$$', LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   RAI:
   - BT CLR
   - BT 1
@@ -27,27 +27,27 @@ layers:
   - UP ARROW
   - {t: ▽, type: trans}
   - '0'
-  - DELETE
+  - BACKSPACE
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-control$$
   - LEFT ALT
   - LEFT COMMAND
   - LEFT SHIFT
   - CLCK
-  - BACKSPACE
+  - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
   - →
-  - ''''
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - UNDO
   - CUT
   - COPY
   - PASTE
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - VOICE COMMAND
-  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -60,7 +60,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RSHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -77,18 +77,6 @@ layers:
   - F9
   - F10
   - F11
-  - LOW
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - F12
   - {t: ▽, type: trans}
   - '!'
   - '@'
@@ -96,29 +84,41 @@ layers:
   - $
   - '%'
   - ^
-  - '-'
   - AMPERSAND
+  - '*'
   - (
   - )
-  - '|'
-  - AC COPY
-  - '='
-  - '-'
-  - KP PLUS
-  - '{'
-  - '}'
+  - DELETE
   - {t: ▽, type: trans}
-  - MUTE
+  - '-'
+  - '@'
+  - $
+  - (
   - '['
   - ']'
-  - ;
-  - ':'
+  - )
+  - '-'
+  - +
+  - '='
+  - ''''
+  - '|'
   - \
+  - /
+  - Alt+Gui+Ctl+<
+  - Alt+Ctl+Gui+>
+  - '{'
+  - MUTE
+  - {t: ▽, type: trans}
+  - '}'
+  - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+`
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
