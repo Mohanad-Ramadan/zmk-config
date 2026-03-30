@@ -126,11 +126,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   num_pad:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&soft_off'
+  - BT NXT
+  - LOCK
+  - SLEEP
+  - POWER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,8 +177,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
