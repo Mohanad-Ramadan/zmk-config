@@ -1,69 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
-    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, PLAY PAUSE, Gui+Sft+3, N, M, ',', ., /, RIGHT SHIFT, num_pad, LEFT ALT, LEFT COMMAND, RAI, '$$mdi:apple-keyboard-control$$',
-    RIGHT CONTROL, LOW, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
-  RAI:
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - Reset
-  - Boot
-  - '&studio_unlock'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+[
-  - Gui+]
-  - CMENU
-  - Alt+BACKSPACE
-  - Gui+-
-  - Gui+=
-  - Alt+BACKSPACE
-  - UP ARROW
-  - {t: ▽, type: trans}
-  - '0'
-  - BACKSPACE
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-control$$
-  - LEFT ALT
-  - LEFT COMMAND
-  - LEFT SHIFT
-  - DELETE
-  - BACKSPACE
-  - LEFT ARROW
-  - DOWN ARROW
-  - →
-  - {t: ▽, type: trans}
-  - ''''
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - Gui+BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - VOICE COMMAND
-  - {t: ▽, type: trans}
-  - Gui+BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, PLAY PAUSE, Gui+Sft+3, N, M, ',', ., /, RIGHT SHIFT, num_pad, LEFT ALT, LEFT COMMAND, LOW, '$$mdi:apple-keyboard-control$$',
+    RIGHT CONTROL, RAI, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   LOW:
   - '`'
   - F1
@@ -118,7 +57,68 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+`
+  - {t: Gui+`, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  RAI:
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - Reset
+  - Boot
+  - '&studio_unlock'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+[
+  - Gui+]
+  - CMENU
+  - Alt+BACKSPACE
+  - Gui+-
+  - Gui+=
+  - Alt+BACKSPACE
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - '0'
+  - BACKSPACE
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - LEFT ALT
+  - LEFT COMMAND
+  - LEFT SHIFT
+  - DELETE
+  - BACKSPACE
+  - LEFT ARROW
+  - DOWN ARROW
+  - →
+  - {t: ▽, type: trans}
+  - ''''
+  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - Gui+BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOICE COMMAND
+  - {t: ▽, type: trans}
+  - Gui+BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
