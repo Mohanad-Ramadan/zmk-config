@@ -46,8 +46,8 @@ layers:
   - {t: ▽, type: trans}
   - (
   - '['
-  - MUTE
   - {t: ▽, type: trans}
+  - MUTE
   - ']'
   - )
   - {t: ▽, type: trans}
@@ -107,8 +107,8 @@ layers:
   - COPY
   - Gui+BACKSPACE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - VOICE COMMAND
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+BACKSPACE
   - {t: ▽, type: trans}
