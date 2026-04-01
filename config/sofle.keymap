@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENCODER_SCROLL";
             #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&msc>, <&msc>;
         };
     };
 
@@ -61,7 +61,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+                <&encoder_scroll SCRL_DOWN SCRL_UP>;
         };
 
         lower_layer {
@@ -98,11 +98,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0          &bt BT_SEL 1           &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4                                  &sys_reset     &bootloader        &studio_unlock  &trans     &trans  &trans
-&trans      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp K_CMENU       &kp LA(BACKSPACE)  &kp LG(MINUS)                                 &kp LG(EQUAL)  &kp LA(BACKSPACE)  &kp UP_ARROW    &trans     &kp N0  &kp BACKSPACE
-&trans      &kp LCTRL             &kp LEFT_ALT           &kp LEFT_COMMAND  &kp LEFT_SHIFT     &kp DELETE                                    &kp BACKSPACE  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT  &trans  &kp SQT
-&trans      &kp K_UNDO            &kp K_CUT              &kp K_COPY        &kp LG(BACKSPACE)  &trans         &kp C_VOICE_COMMAND    &trans  &trans         &kp LG(BACKSPACE)  &trans          &trans     &trans  &trans
-                                  &trans                 &trans            &trans             &trans         &trans                 &trans  &trans         &trans             &trans          &trans
+&trans  &trans                &trans                 &trans            &trans             &trans                                        &sys_reset     &bootloader        &studio_unlock  &trans     &trans  &trans
+&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp K_CMENU       &kp LA(BACKSPACE)  &kp LG(MINUS)                                 &kp LG(EQUAL)  &kp LA(BACKSPACE)  &kp UP_ARROW    &trans     &kp N0  &kp BACKSPACE
+&trans  &kp LCTRL             &kp LEFT_ALT           &kp LEFT_COMMAND  &kp LEFT_SHIFT     &kp DELETE                                    &kp BACKSPACE  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT  &trans  &kp SQT
+&trans  &kp K_UNDO            &kp K_CUT              &kp K_COPY        &kp LG(BACKSPACE)  &trans         &kp C_VOICE_COMMAND    &trans  &trans         &kp LG(BACKSPACE)  &trans          &trans     &trans  &trans
+                              &trans                 &trans            &trans             &trans         &trans                 &trans  &trans         &trans             &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(RIGHT_BRACKET) LG(LEFT_BRACKET)>;
@@ -110,11 +110,11 @@
 
         num_pad {
             bindings = <
-&soft_off  &bt BT_NXT  &kp K_LOCK  &kp K_SLEEP   &kp K_POWER     &trans                    &trans  &trans        &trans        &trans        &trans  &trans
-&trans     &trans      &trans      &trans        &trans          &trans                    &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-&trans     &trans      &trans      &trans        &trans          &trans                    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans     &trans      &trans      &trans        &trans          &trans  &trans    &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                       &trans      &msc SCRL_UP  &msc SCRL_DOWN  &trans  &trans    &trans  &trans  &trans        &trans        &trans
+&soft_off  &bt BT_NXT  &kp K_LOCK  &kp K_SLEEP   &kp K_POWER     &trans                    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_DISC 0  &trans  &trans
+&trans     &trans      &trans      &trans        &trans          &trans                    &trans      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &trans  &trans
+&trans     &trans      &trans      &trans        &trans          &trans                    &trans      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &trans  &trans
+&trans     &trans      &trans      &trans        &trans          &trans  &trans    &trans  &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &trans  &trans
+                       &trans      &msc SCRL_UP  &msc SCRL_DOWN  &trans  &trans    &trans  &trans      &trans        &trans        &kp NUMBER_0
             >;
 
             sensor-bindings =
