@@ -75,11 +75,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE  &kp F1           &kp F2       &kp F3      &kp F4                &kp F5                                       &kp F6                  &kp F7                 &kp F8        &kp F9                &kp F10                &kp F11
-&trans     &kp EXCLAMATION  &kp AT_SIGN  &kp HASH    &kp DOLLAR            &kp PERCENT                                  &kp CARET               &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
-&kp PIPE   &kp SLASH        &kp AT       &kp DOLLAR  &kp MINUS             &kp LG(LA(LC(COMMA)))                        &kp LG(LA(LC(PERIOD)))  &kp QUESTION           &kp MINUS     &kp PLUS              &kp EQUAL              &kp SQT
-&trans     &trans           &trans       &trans      &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET       &trans    &kp K_MUTE  &kp RIGHT_BRACKET       &kp RIGHT_PARENTHESIS  &trans        &trans                &trans                 &trans
-                            &trans       &trans      &trans                &kp LG(GRAVE)          &trans    &trans      &trans                  &trans                 &trans        &trans
+&kp GRAVE      &kp F1           &kp F2       &kp F3      &kp F4                &kp F5                                       &kp F6                  &kp F7                 &kp F8        &kp F9                &kp F11                &trans
+&kp LC(GRAVE)  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH    &kp DOLLAR            &kp PERCENT                                  &kp CARET               &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
+&kp PIPE       &kp SLASH        &kp AT       &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp LG(LA(LC(COMMA)))                        &kp LG(LA(LC(PERIOD)))  &kp RIGHT_PARENTHESIS  &kp MINUS     &kp PLUS              &kp EQUAL              &kp SQT
+&trans         &trans           &trans       &trans      &kp LEFT_BRACE        &kp LEFT_BRACKET       &trans    &kp K_MUTE  &kp RIGHT_BRACKET       &kp RIGHT_BRACE        &trans        &trans                &trans                 &trans
+                                &trans       &trans      &trans                &kp LG(GRAVE)          &trans    &trans      &trans                  &trans                 &trans        &trans
             >;
 
             sensor-bindings =

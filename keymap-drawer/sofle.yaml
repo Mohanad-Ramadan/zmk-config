@@ -14,9 +14,9 @@ layers:
   - F7
   - F8
   - F9
-  - F10
   - F11
   - {t: ▽, type: trans}
+  - Ctl+`
   - '!'
   - '@'
   - '#'
@@ -32,10 +32,10 @@ layers:
   - /
   - '@'
   - $
-  - '-'
+  - (
   - Gui+Alt+Ctl+,
   - Gui+Alt+Ctl+.
-  - '?'
+  - )
   - '-'
   - +
   - '='
@@ -44,12 +44,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - (
+  - '{'
   - '['
   - {t: ▽, type: trans}
   - MUTE
   - ']'
-  - )
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
