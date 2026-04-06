@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
-    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, PLAY PAUSE, Gui+Sft+5, N, M, ',', ., /, RIGHT SHIFT, num_pad, LEFT ALT, LEFT COMMAND, LOW, '$$mdi:apple-keyboard-control$$',
+    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, Sft+Gui+5, ⏯, N, M, ',', ., /, RIGHT SHIFT, num_pad, LEFT ALT, LEFT COMMAND, LOW, '$$mdi:apple-keyboard-control$$',
     BACKSPACE, RAI, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
   LOW:
   - '`'
@@ -184,7 +184,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - .
   - '0'
 combos:
 - p: [43, 42]
