@@ -21,14 +21,14 @@ layers:
   - AMPERSAND
   - '*'
   - /
-  - Hyper+,
-  - Hyper+.
+  - '{'
+  - '}'
   - '['
   - ']'
   - Hyper+C
   - Hyper+F
   - DELETE
-  - Ctl+C
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -45,10 +45,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+Gui+Ctl+,
   - {t: ▽, type: trans}
   - MUTE
-  - {t: ▽, type: trans}
+  - Alt+Gui+Ctl+.
   - '-'
   - +
   - '='
@@ -103,9 +103,9 @@ layers:
   - ''''
   - {t: ▽, type: trans}
   - UNDO
-  - CUT
-  - COPY
-  - Gui+BACKSPACE
+  - Gui+X
+  - Gui+C
+  - Gui+P
   - {t: ▽, type: trans}
   - VOICE COMMAND
   - {t: ▽, type: trans}
