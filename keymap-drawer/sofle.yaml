@@ -17,41 +17,41 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - Ctl+`
+  - ^
+  - AMPERSAND
+  - '*'
+  - /
+  - Hyper+,
+  - Hyper+.
+  - '['
+  - ']'
+  - Hyper+C
+  - Hyper+F
+  - DELETE
+  - Ctl+C
   - '!'
   - '@'
   - '#'
   - $
-  - '%'
-  - ^
-  - AMPERSAND
-  - '*'
-  - (
-  - )
-  - DELETE
-  - '|'
-  - /
-  - '@'
-  - $
-  - (
-  - Gui+Alt+Ctl+,
-  - Gui+Alt+Ctl+.
-  - )
+  - '?'
   - '-'
-  - +
-  - '='
+  - (
+  - )
+  - Ctl+P
+  - Hyper+M
   - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '{'
-  - '['
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - MUTE
-  - ']'
-  - '}'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - +
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
