@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
 
         super_screenshot {
-            bindings = <&kp LG(LS(NUMBER_4))>;
+            bindings = <&kp LG(LS(N5))>;
             key-positions = <43 42>;
         };
     };
@@ -25,6 +25,13 @@
             label = "ENCODER_SCROLL";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+        };
+
+        mouse_movement: mouse_movement {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "MOUSE_MOVEMENT";
+            #sensor-binding-cells = <2>;
+            bindings = <&mmv>, <&mmv>;
         };
     };
 
@@ -52,11 +59,11 @@
             //               |CTRL | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   | RALT |
 
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4            &kp N5                                   &kp N6  &kp N7     &kp N8         &kp N9    &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q   &kp W   &kp E         &kp R             &kp T                                    &kp Y   &kp U      &kp I          &kp O     &kp P     &kp BACKSPACE
-&kp LCTRL       &kp A   &kp S   &kp D         &kp F             &kp G                                    &kp H   &kp J      &kp K          &kp L     &kp SEMI  &kp ENTER
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C         &kp V             &kp B   &kp LS(LG(N5))    &kp C_PP       &kp N   &kp M      &kp COMMA      &kp DOT   &kp FSLH  &kp RIGHT_SHIFT
-                        &mo 3   &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1   &kp RCTRL         &kp BACKSPACE  &mo 2   &kp SPACE  &kp RIGHT_GUI  &kp RALT
+&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4            &kp N5                          &kp N6  &kp N7     &kp N8         &kp N9    &kp N0    &kp BACKSPACE
+&kp TAB         &kp Q   &kp W   &kp E         &kp R             &kp T                           &kp Y   &kp U      &kp I          &kp O     &kp P     &kp BACKSPACE
+&kp LCTRL       &kp A   &kp S   &kp D         &kp F             &kp G                           &kp H   &kp J      &kp K          &kp L     &kp SEMI  &kp ENTER
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C         &kp V             &kp B   &tog 4       &kp C_PP   &kp N   &kp M      &kp COMMA      &kp DOT   &kp FSLH  &kp RIGHT_SHIFT
+                        &mo 3   &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1   &kp RCTRL    &kp ENTER  &mo 2   &kp SPACE  &kp RIGHT_GUI  &kp RALT
             >;
 
             sensor-bindings =
@@ -75,11 +82,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE      &kp F1           &kp F2         &kp F3        &kp F4      &kp F5                                       &kp F6                  &kp F7                &kp F8                 &kp F9                 &kp F11                &trans
-&kp LC(GRAVE)  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp SLASH   &kp LEFT_BRACE                               &kp RIGHT_BRACE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(F))))  &kp DELETE
-&trans         &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp QUESTION                                 &kp MINUS               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(P)              &kp LS(LG(LA(LC(M))))  &kp SQT
-&trans         &trans           &trans         &trans        &trans      &kp LA(LG(LC(COMMA)))  &trans    &kp K_MUTE  &kp LA(LG(LC(PERIOD)))  &kp MINUS             &kp PLUS               &kp EQUAL              &trans                 &trans
-                                &trans         &trans        &trans      &trans                 &trans    &trans      &kp LG(GRAVE)           &trans                &trans                 &trans
+&kp GRAVE      &kp F1           &kp F2         &kp F3          &kp F4           &kp F5                                       &kp F6                  &kp F7                &kp F8                 &kp F9                 &kp F11                &trans
+&kp LC(GRAVE)  &kp CARET        &kp AMPERSAND  &kp ASTERISK    &kp QUESTION     &kp SLASH                                    &kp BACKSLASH           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(F))))  &kp DELETE
+&trans         &kp EXCLAMATION  &kp AT_SIGN    &kp HASH        &kp DOLLAR       &kp PERCENT                                  &kp MINUS               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(P)              &kp LS(LG(LA(LC(M))))  &kp SQT
+&trans         &trans           &trans         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LA(LG(LC(COMMA)))  &trans    &kp K_MUTE  &kp LA(LG(LC(PERIOD)))  &kp MINUS             &kp PLUS               &kp EQUAL              &trans                 &trans
+                                &trans         &trans          &trans           &trans                 &trans    &trans      &kp LG(GRAVE)           &trans                &trans                 &trans
             >;
 
             sensor-bindings =
@@ -120,6 +127,20 @@
             sensor-bindings =
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>,
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+        };
+
+        Mouse {
+            bindings = <
+&to 0   &trans  &trans  &trans  &trans  &trans                          &trans  &trans             &trans          &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans  &mmv MOVE_X(-300)  &mmv MOVE_UP    &mmv MOVE_X(300)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans  &mmv MOVE_Y(-300)  &trans          &mmv MOVE_Y(300)  &trans  &trans
+                &trans  &trans  &trans  &trans  &mkp LCLK    &mkp RCLK  &trans  &trans             &trans          &trans
+            >;
+
+            sensor-bindings =
+                <&mouse_movement MOVE_Y(-100) MOVE_Y(100)>,
+                <&mouse_movement MOVE_X(100) MOVE_X(-100)>;
         };
     };
 };
