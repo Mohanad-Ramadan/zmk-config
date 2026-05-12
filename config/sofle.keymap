@@ -105,11 +105,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans                &trans                 &trans            &trans             &trans                                        &sys_reset     &bootloader        &studio_unlock  &trans     &trans  &trans
-&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp K_CMENU       &kp LA(BACKSPACE)  &kp LG(MINUS)                                 &kp LG(EQUAL)  &kp LA(BACKSPACE)  &kp UP_ARROW    &trans     &kp N0  &kp BACKSPACE
-&trans  &kp LCTRL             &kp LEFT_ALT           &kp LEFT_COMMAND  &kp LEFT_SHIFT     &kp DELETE                                    &kp BACKSPACE  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT  &trans  &kp SQT
-&trans  &kp K_UNDO            &kp LG(X)              &kp LG(C)         &kp LG(P)          &trans         &kp C_VOICE_COMMAND    &trans  &trans         &kp LG(BACKSPACE)  &trans          &trans     &trans  &trans
-                              &trans                 &trans            &trans             &trans         &trans                 &trans  &trans         &trans             &trans          &trans
+&trans  &trans                &trans                 &trans        &trans             &trans                                        &sys_reset     &bootloader        &studio_unlock  &trans     &trans  &trans
+&trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp K_CMENU   &kp LA(BACKSPACE)  &kp LG(MINUS)                                 &kp LG(EQUAL)  &kp LA(BACKSPACE)  &kp UP_ARROW    &trans     &kp N0  &kp BACKSPACE
+&trans  &kp LEFT_SHIFT        &kp LEFT_CONTROL       &kp LEFT_ALT  &kp LEFT_COMMAND   &kp DELETE                                    &kp BACKSPACE  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT  &trans  &kp SQT
+&trans  &kp K_UNDO            &kp LG(X)              &kp LG(C)     &kp LG(P)          &trans         &kp C_VOICE_COMMAND    &trans  &trans         &kp LG(BACKSPACE)  &trans          &trans     &trans  &trans
+                              &trans                 &trans        &trans             &trans         &trans                 &trans  &trans         &trans             &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;

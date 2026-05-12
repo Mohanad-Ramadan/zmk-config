@@ -90,10 +90,10 @@ layers:
   - '0'
   - BACKSPACE
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - LEFT SHIFT
+  - LEFT CONTROL
   - LEFT ALT
   - LEFT COMMAND
-  - LEFT SHIFT
   - DELETE
   - BACKSPACE
   - LEFT ARROW
