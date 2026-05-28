@@ -372,3 +372,5 @@ layers:
 combos:
 - p: [43, 42]
   k: Gui+Sft+5
+- p: [28, 27, 26]
+  k: {t: Gaming-windows, h: toggle}

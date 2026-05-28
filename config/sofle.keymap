@@ -17,6 +17,11 @@
             bindings = <&kp LG(LS(N5))>;
             key-positions = <43 42>;
         };
+
+        go-to-gaming {
+            bindings = <&to 5>;
+            key-positions = <28 27 26>;
+        };
     };
 
     behaviors {
