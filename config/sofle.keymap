@@ -142,5 +142,25 @@
                 <&mouse_movement MOVE_Y(-100) MOVE_Y(100)>,
                 <&mouse_movement MOVE_X(100) MOVE_X(-100)>;
         };
+
+        Gaming-windows {
+            bindings = <
+&kp ESCAPE  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &kp T      &kp Q      &kp W     &kp E     &kp X                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT   &kp LCTRL  &kp A      &kp S     &kp D     &kp G                        &trans  &trans  &trans  &trans  &trans  &trans
+&to 0       &kp C      &kp Z      &kp X     &kp M     &kp V      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                       &kp ENTER  &kp RGUI  &kp RALT  &kp SPACE  &kp F     &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
