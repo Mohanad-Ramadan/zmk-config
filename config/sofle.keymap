@@ -25,6 +25,13 @@
     };
 
     behaviors {
+        /* Wake from soft-off: press the reset button on each half. */
+        soft_off: soft_off {
+            compatible = "zmk,behavior-soft-off";
+            #binding-cells = <0>;
+            hold-time-ms = <1500>;
+        };
+
         encoder_scroll: encoder_scroll {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENCODER_SCROLL";
