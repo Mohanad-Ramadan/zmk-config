@@ -9,6 +9,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+/* Override ZMK's built-in &soft_off to require a 1.5s hold.
+ * Wake from soft-off: press the reset button on each half. */
+&soft_off {
+    hold-time-ms = <1500>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -25,13 +31,6 @@
     };
 
     behaviors {
-        /* Wake from soft-off: press the reset button on each half. */
-        soft_off: soft_off {
-            compatible = "zmk,behavior-soft-off";
-            #binding-cells = <0>;
-            hold-time-ms = <1500>;
-        };
-
         encoder_scroll: encoder_scroll {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENCODER_SCROLL";
