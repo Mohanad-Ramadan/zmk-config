@@ -234,7 +234,6 @@ zmk-config # main folder
 │   ├── config_keymap-drawer.yaml # config file keymap-drawer
 │   ├── corne.conf # general configurations of the corne
 │   ├── corne.keymap # your keymap file
-│   ├── keymap_german_mac_iso_zmk.h # example of definition for german mac iso
 │   └── west.yml # conf to connect with the repository
 ├── firmware
 │   └── *.uf2 # all the firmwares
