@@ -164,14 +164,8 @@ Here you can see the visual changes to the configuration:
 > [config](./config/config_keymap-drawer.yaml).
 > The file for the workflows is in [workflows](./.github/workflows/keymap-drawer.yaml) in case you want to modify it.
 
-## keymap corne
-[![keymap-drawer-demo-corne](keymap-drawer/corne.svg)](https://www.youtube.com/c/mctechnology17)
 ## keymap sofle
 [![keymap-drawer-demo-sofle](keymap-drawer/sofle.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap splitkb_aurora_sofle
-[![keymap-drawer-demo-splitkb_aurora_sofle](keymap-drawer/splitkb_aurora_sofle.svg)](https://www.youtube.com/c/mctechnology17)
-## keymap lily58
-[![keymap-drawer-demo-lily58](keymap-drawer/lily58.svg)](https://www.youtube.com/c/mctechnology17)
 
 If you want to customize this image with shapes/colors/etc. You can see these references:
 [^1] [^2] [^3]
@@ -232,14 +226,14 @@ zmk-config # main folder
 │               └── # here you can modify the screen widgets
 │   config # configuration folder
 │   ├── config_keymap-drawer.yaml # config file keymap-drawer
-│   ├── corne.conf # general configurations of the corne
-│   ├── corne.keymap # your keymap file
+│   ├── sofle.conf # general configurations of the sofle
+│   ├── sofle.keymap # your keymap file
 │   └── west.yml # conf to connect with the repository
 ├── firmware
 │   └── *.uf2 # all the firmwares
 ├── keymap-drawer # folder with the keymap-drawer
-│   ├── corne.svg # img of the keymap
-│   └── corne.yaml # keymap file yaml format for keymap-drawer
+│   ├── sofle.svg # img of the keymap
+│   └── sofle.yaml # keymap file yaml format for keymap-drawer
 └── src
     └── ... # other files
 ```
