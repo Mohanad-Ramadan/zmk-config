@@ -162,11 +162,11 @@
 
         Gaming-windows {
             bindings = <
-&kp ESCAPE  &kp N1     &kp N2     &kp N3    &kp N4         &kp N5                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &kp X      &kp Q      &kp W     &kp E          &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT   &kp LCTRL  &kp A      &kp S     &kp D          &kp B                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp M       &kp C      &kp Z      &kp X     &kp V          &kp M      &to 0           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                       &kp ENTER  &kp RGUI  &kp BACKSPACE  &kp SPACE  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &kp X      &kp Q      &kp W     &kp E      &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT   &kp LCTRL  &kp A      &kp S     &kp D      &kp B                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp M       &kp C      &kp Z      &kp X     &kp V      &kp M      &to 0           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                       &kp ENTER  &kp RGUI  &kp SPACE  &kp SPACE  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
