@@ -301,7 +301,7 @@ layers:
   - ENTER
   - $$mdi:apple-keyboard-command$$
   - ␣
-  - ␣
+  - LEFT SHIFT
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
