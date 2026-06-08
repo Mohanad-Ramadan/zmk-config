@@ -11,9 +11,8 @@
 
 /* Override ZMK's built-in &soft_off to require a 1.5s hold.
  * Wake from soft-off: press the reset button on each half. */
-&soft_off {
-    hold-time-ms = <1500>;
-};
+
+&soft_off { hold-time-ms = <1500>; };
 
 / {
     combos {
@@ -53,6 +52,13 @@
             bindings = <&macro_tap>, <&kp MINUS &kp GT>;
 
             label = "FIRST_MACRO";
+        };
+
+        knife_weapon_switch: knife_weapon_switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1>;
+            label = "KNIFE_WEAPON_SWITCH";
         };
     };
 
@@ -119,7 +125,7 @@
 &trans  &trans                &trans                 &trans        &trans             &trans                                        &sys_reset     &bootloader        &studio_unlock  &trans     &trans  &trans
 &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp K_CMENU   &kp LA(BACKSPACE)  &kp LG(MINUS)                                 &kp LG(EQUAL)  &kp LA(BACKSPACE)  &kp UP_ARROW    &trans     &kp N0  &kp BACKSPACE
 &trans  &kp LEFT_SHIFT        &kp LEFT_CONTROL       &kp LEFT_ALT  &kp LEFT_COMMAND   &kp DELETE                                    &kp BACKSPACE  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT  &trans  &kp SQT
-&trans  &kp K_UNDO            &kp LG(X)              &kp LG(C)     &kp LG(P)          &trans         &kp C_VOICE_COMMAND    &trans  &trans         &kp LG(BACKSPACE)  &trans          &trans     &trans  &trans
+&trans  &kp K_UNDO            &kp LG(X)              &kp LG(C)     &kp LG(V)          &trans         &kp C_VOICE_COMMAND    &trans  &trans         &kp LG(BACKSPACE)  &trans          &trans     &trans  &trans
                               &trans                 &trans        &trans             &trans         &trans                 &trans  &trans         &trans             &trans          &trans
             >;
 
@@ -156,11 +162,11 @@
 
         Gaming-windows {
             bindings = <
-&kp ESCAPE  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &kp T      &kp Q      &kp W     &kp E     &kp X                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT   &kp LCTRL  &kp A      &kp S     &kp D     &kp G                        &trans  &trans  &trans  &trans  &trans  &trans
-&to 0       &kp C      &kp Z      &kp X     &kp M     &kp V      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                       &kp ENTER  &kp RGUI  &kp RALT  &kp SPACE  &kp F     &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp N1     &kp N2     &kp N3    &kp N4         &kp N5                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &kp X      &kp Q      &kp W     &kp E          &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT   &kp LCTRL  &kp A      &kp S     &kp D          &kp B                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp M       &kp C      &kp Z      &kp X     &kp V          &kp M      &to 0           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                       &kp ENTER  &kp RGUI  &kp BACKSPACE  &kp SPACE  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans
             >;
         };
 

@@ -105,7 +105,7 @@ layers:
   - UNDO
   - Gui+X
   - Gui+C
-  - Gui+P
+  - Gui+V
   - {t: ▽, type: trans}
   - VOICE COMMAND
   - {t: ▽, type: trans}
@@ -261,11 +261,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ↹
-  - T
+  - X
   - Q
   - W
   - E
-  - X
+  - R
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -277,20 +277,20 @@ layers:
   - A
   - S
   - D
-  - G
+  - B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BAS, h: toggle}
+  - M
   - C
   - Z
   - X
-  - M
   - V
-  - {t: ▽, type: trans}
+  - M
+  - {t: BAS, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -300,9 +300,9 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
+  - BACKSPACE
   - ␣
-  - F
+  - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
