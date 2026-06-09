@@ -286,9 +286,9 @@ layers:
   - {t: ▽, type: trans}
   - M
   - C
-  - Z
-  - X
   - V
+  - ENTER
+  - Z
   - M
   - {t: BAS, h: toggle}
   - {t: ▽, type: trans}
@@ -298,11 +298,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
+  - Sft+ENTER
   - $$mdi:apple-keyboard-command$$
   - ␣
   - LEFT SHIFT
-  - '3'
+  - F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
