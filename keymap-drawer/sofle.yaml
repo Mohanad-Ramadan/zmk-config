@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, '$$mdi:apple-keyboard-control$$', A, S, D, F,
-    G, H, J, K, L, ;, ENTER, LEFT SHIFT, Z, X, C, V, B, VOICE COMMAND, ⏯, N, M, ',', ., /, RIGHT SHIFT, num_pad, LEFT ALT, LEFT COMMAND, LOW, '$$mdi:apple-keyboard-control$$',
-    ENTER, RAI, ␣, RIGHT GUI, '$$mdi:apple-keyboard-option$$']
+  BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '$$mdi:backspace-outline$$', ↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$',
+    A, S, D, F, G, H, J, K, L, ;, ENTER, '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, VOICE COMMAND, ⏯, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', num_pad,
+    '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$', LOW, '$$mdi:apple-keyboard-control$$', ENTER, RAI, ␣, '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$']
   LOW:
   - '`'
   - F1
@@ -16,41 +16,41 @@ layers:
   - F9
   - F11
   - {t: ▽, type: trans}
-  - Ctl+`
-  - ^
-  - AMPERSAND
-  - '*'
-  - '?'
+  - '`'
+  - '6'
+  - '7'
+  - '8'
+  - /
   - /
   - \
   - '['
   - ']'
-  - Hyper+C
-  - Hyper+F
-  - DELETE
+  - C
+  - F
+  - ⌦
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
   - '&arrow_string_R'
-  - (
-  - )
-  - Ctl+P
-  - Hyper+M
+  - '9'
+  - '0'
+  - P
+  - M
   - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '{'
-  - '}'
-  - Alt+Gui+Ctl+,
+  - '['
+  - ']'
+  - ','
   - {t: ▽, type: trans}
   - MUTE
-  - Alt+Gui+Ctl+.
+  - .
   - '-'
-  - +
+  - '='
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -60,7 +60,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+`
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -72,45 +72,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Reset
-  - Boot
+  - {t: ▽, type: trans}
   - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+[
-  - Gui+]
+  - '['
+  - ']'
   - CMENU
-  - Alt+BACKSPACE
-  - Gui+-
-  - Gui+=
-  - Alt+BACKSPACE
-  - UP ARROW
+  - $$mdi:backspace-outline$$
+  - '-'
+  - '='
+  - $$mdi:backspace-outline$$
+  - ↑
   - {t: ▽, type: trans}
   - '0'
-  - BACKSPACE
+  - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - LEFT CONTROL
-  - LEFT ALT
-  - LEFT COMMAND
-  - DELETE
-  - BACKSPACE
-  - LEFT ARROW
-  - DOWN ARROW
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:backspace-outline$$
+  - ⌦
+  - ←
+  - ↓
   - →
   - {t: ▽, type: trans}
   - ''''
   - {t: ▽, type: trans}
   - UNDO
-  - Gui+X
-  - Gui+C
-  - Gui+V
+  - X
+  - C
+  - V
   - {t: ▽, type: trans}
   - VOICE COMMAND
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+BACKSPACE
+  - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -248,7 +248,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Gaming-windows:
-  - ESCAPE
+  - Esc
   - '1'
   - '2'
   - '3'
@@ -298,10 +298,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+ENTER
+  - ENTER
   - $$mdi:apple-keyboard-command$$
   - ␣
-  - LEFT SHIFT
+  - $$mdi:apple-keyboard-shift$$
   - F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -374,3 +374,5 @@ combos:
   k: Gui+Sft+5
 - p: [28, 27, 26]
   k: {t: Gaming-windows, h: toggle}
+- p: [28, 31]
+  k: $$mdi:backspace-outline$$
