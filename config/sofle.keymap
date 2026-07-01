@@ -27,7 +27,7 @@
         };
         combo_30823645 {
             bindings = <&kp BSPC>;
-            key-positions = <28 31>;
+            key-positions = <31 28>;
         };
     };
     behaviors {
@@ -91,7 +91,7 @@
                 &trans &trans &trans &trans &trans &trans &sys_reset &trans &studio_unlock
                 &trans &trans &trans &trans &kp LBKT &kp RBKT &kp K_CMENU &kp BSPC &kp MINUS
                 &kp EQUAL &kp BSPC &kp UP &trans &kp N0 &kp BSPC &trans &kp LSHFT &kp LCTRL
-                &kp LALT &kp LGUI &kp BSPC &kp DEL &kp LEFT &kp DOWN &kp RIGHT &trans &kp SQT
+                &kp LALT &kp LGUI &kp DEL &kp BSPC &kp LEFT &kp DOWN &kp RIGHT &trans &kp SQT
                 &trans &kp K_UNDO &kp X &kp C &kp V &trans &kp C_VOICE_COMMAND &trans &trans
                 &kp BSPC &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans
