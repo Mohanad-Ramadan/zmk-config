@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
   BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '$$mdi:backspace-outline$$', ↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$',
-    A, S, D, F, G, H, J, K, L, ;, ENTER, '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, VOICE COMMAND, ⏯, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', num_pad,
-    '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$', LOW, '$$mdi:apple-keyboard-control$$', ENTER, RAI, ␣, '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$']
+    A, S, D, F, G, H, J, K, L, ;, ENTER, '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, Hyper+S, ⏯, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', num_pad, '$$mdi:apple-keyboard-option$$',
+    '$$mdi:apple-keyboard-command$$', LOW, '$$mdi:apple-keyboard-control$$', ENTER, RAI, ␣, '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$']
   LOW:
   - '`'
   - F1
@@ -16,41 +16,41 @@ layers:
   - F9
   - F11
   - {t: ▽, type: trans}
-  - '`'
-  - '6'
-  - '7'
-  - '8'
-  - /
-  - /
+  - Ctl+`
+  - ^
+  - AMPS
+  - '*'
+  - '?'
   - \
-  - '['
-  - ']'
-  - C
-  - F
+  - /
+  - '&macro_bracket'
+  - Sft+Alt+F18
+  - Hyper+C
+  - Hyper+F
   - ⌦
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - '&arrow_string_R'
-  - '9'
-  - '0'
-  - P
-  - M
+  - '&macro_paren'
+  - '&macro_brace'
+  - Ctl+P
+  - Hyper+M
   - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - ','
-  - {t: ▽, type: trans}
+  - '{'
+  - '}'
+  - Ctl+Alt+Gui+,
+  - Hyper+D
   - MUTE
-  - .
+  - Ctl+Alt+Gui+.
   - '-'
-  - '='
+  - +
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -59,8 +59,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
+  - Gui+`
+  - Sft+Gui+`
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -72,19 +72,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Reset
-  - {t: ▽, type: trans}
-  - '&studio_unlock'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Boot
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - CMENU
-  - $$mdi:backspace-outline$$
-  - '-'
-  - '='
-  - $$mdi:backspace-outline$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+[
+  - Gui+]
+  - '&mkp RCLK'
+  - Alt+⌫
+  - Gui+-
+  - Gui+=
+  - Alt+⌫
   - ↑
   - {t: ▽, type: trans}
   - '0'
@@ -103,14 +103,14 @@ layers:
   - ''''
   - {t: ▽, type: trans}
   - UNDO
-  - X
-  - C
-  - V
-  - {t: ▽, type: trans}
-  - VOICE COMMAND
+  - Gui+X
+  - Gui+C
+  - Gui+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:backspace-outline$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+⌫
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,16 +126,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   num_pad:
-  - '&soft_off'
+  - ''
   - BT NXT
-  - LOCK
+  - ''
   - SLEEP
   - POWER
   - {t: ▽, type: trans}
   - BT CLR
   - BT 1
   - BT 2
-  - {t: BT DISC, h: '0'}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -184,8 +184,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - .
   - '0'
+  - .
   Mouse:
   - {t: BAS, h: toggle}
   - {t: ▽, type: trans}
@@ -286,9 +286,9 @@ layers:
   - {t: ▽, type: trans}
   - M
   - C
-  - V
-  - ENTER
   - Z
+  - X
+  - V
   - M
   - {t: BAS, h: toggle}
   - {t: ▽, type: trans}
@@ -302,13 +302,13 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - ␣
   - $$mdi:apple-keyboard-shift$$
-  - F
+  - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '6':
+  layer_6:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -370,9 +370,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [43, 42]
+- p: [28, 31]
   k: Gui+Sft+5
 - p: [28, 27, 26]
   k: {t: Gaming-windows, h: toggle}
-- p: [31, 28]
-  k: $$mdi:backspace-outline$$
